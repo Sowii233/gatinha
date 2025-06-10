@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body class="bg">
+    <div class="hearts">
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+    </div>
+    <br>
+    <h1 class="h1">Bem-Vinda ao sorteio de frases!</h1>
+    <div class="container">
+
+        <div class="div2"></div>
+        <div class="div">
+            <div id="frase" class="frase"></div>
+            <br>
+            <br>
+            <button class="btn" onclick="sorteio()"> Sorteie uma frase!</button>
+            <script>
+                async function obterFrasesTxt() {
+                    const res = await fetch('frases.txt');
+                    const text = await res.text();
+                    return text.split('\n').filter(linha => linha.trim() !== '');
+                }
+
+                async function sorteio() {
+                    const frases = await obterFrasesTxt();
+                    const frase = frases[Math.floor(Math.random() * frases.length)];
+                    document.getElementById('frase').innerText = frase;
+                }
+            </script>
+
+        </div>
+
+
+</body>
+
+
+</html>
