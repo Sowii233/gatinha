@@ -1,0 +1,85 @@
+.bg {
+    background-color: rgb(26, 1, 1);
+}
+
+.titulo {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.titulo2 {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    flex-direction: column;
+
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+}
+
+.btn {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: black;
+    width: 135px;
+    height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: transparent;
+    align-self: center;
+}
+
+.coracao {
+    width: 100px;
+    height: 90px;
+    background: rgb(255, 0, 0);
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 50px auto;
+}
+
+.coracao::before,
+.coracao::after {
+    content: "";
+    width: 100px;
+    height: 90px;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.coracao::before {
+    top: -50px;
+    left: 0;
+}
+
+.coracao::after {
+    left: 50px;
+    top: 0;
+}
+
+.h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
