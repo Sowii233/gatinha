@@ -36,7 +36,7 @@
 }
 
 .div2 {
-    width: 420px;
+    width: 440px;
     height: 270px;
     margin: auto;
     background-color: rgb(255, 0, 55);
@@ -49,7 +49,7 @@
     flex-direction: column;
     font-family: courier;
     font-weight: bold;
-    width: 380px;
+    width: 400px;
     height: 225px;
     margin: auto;
     border: 1px solid;
