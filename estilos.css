@@ -228,3 +228,10 @@
         opacity: 0;
     }
 }
+
+.frases {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
