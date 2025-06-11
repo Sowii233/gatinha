@@ -245,3 +245,81 @@
     text-align: center;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+
+  /* Ajusta a animação de fundo para ficar mais estável e menos deslocada */
+  .bg {
+    background-size: 200% 200%;
+    animation-duration: 15s;
+  }
+
+  /* Ajusta a área das corações para não ultrapassar a tela */
+  .hearts {
+    overflow: visible;
+  }
+  .heart {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+  }
+
+  /* Container principal flexível, altura adaptável, centralizado */
+  .container {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Div de fundo com blur reduzido e tamanho proporcional */
+  .div2 {
+    width: 90vw;
+    max-width: 420px;
+    height: 200px;
+    filter: blur(4px);
+    margin: 0 auto;
+  }
+
+  /* Div do conteúdo com tamanho e posição responsivos */
+  .div {
+    position: relative;
+    width: 90vw;
+    max-width: 380px;
+    height: auto;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  /* Botão com largura e altura ajustadas */
+  .btn {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  /* Frase exibida, para melhor leitura em telas pequenas */
+  .frase {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  /* Texto grande responsivo, largura ajustável e fonte menor */
+  .pp {
+    width: 90vw;
+    max-width: 600px;
+    font-size: 18px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  /* Título centralizado com tamanho menor */
+  .h1 {
+    font-size: 24px;
+    padding: 0 1rem;
+  }
+}
