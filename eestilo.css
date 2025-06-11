@@ -6,7 +6,7 @@
 
 .bg {
 
-    background: linear-gradient(270deg, #973d5d, #fde2e4);
+    background: linear-gradient(270deg, #eb0000, #000000);
     background-size: 400% 400%;
     animation: animarFundo 10s ease infinite;
 }
