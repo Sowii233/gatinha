@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .bg {
@@ -93,4 +96,36 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    /* Ajusta o fundo e a animação */
+    .bg {
+        background-size: 200% 200%;
+        animation: animarFundo 15s ease infinite;
+    }
+
+    /* Ajusta o container das imagens */
+    .container2 {
+        width: 90vw;
+        height: 90vw;
+        max-width: 90vw;
+        max-height: 90vw;
+        border-radius: 20px;
+    }
+
+    /* Ajusta o texto */
+    .pp {
+        width: 90vw;
+        max-width: 90vw;
+        font-size: 18px;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    /* (Opcional) Ajusta os botões, caso queira */
+    #prev, #next {
+        width: 25px;
+        height: 25px;
+    }
 }
