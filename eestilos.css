@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .container2 {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
 .bg {
 
     background: radial-gradient(circle, #cf00f8 20%, #002141 80%);
@@ -28,6 +36,8 @@
 }
 
 .h1 {
+    padding: 10px;
+    font-size: 1.5rem;
     text-align: center;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,8 +70,8 @@
 
 .img {
     position: relative;
-    width: 95%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     pointer-events: auto;
     object-position: center;
@@ -71,29 +81,31 @@
     object-position: top;
     background: radial-gradient(circle, #330055, #001a66);
     color: rgb(255, 254, 254);
-    width: 150px;
-    height: 70px;
+    width: 80%px;
+    height: 60px;
     border-radius: 20px;
     border-color: transparent;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .p {
-    font-size: 25px;
+    font-size: 1.2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
 
 .img2 {
-    height: 105px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     align-items: start;
     object-fit: contain;
-    position: absolute;
+    position: static;
     left: 720px;
     z-index: 1;
     top: 160px;
+    display: block;
+    margin: 10px auto;
 }
 
 .btn2 {
@@ -103,7 +115,7 @@
 
 .pp {
     color: white;
-    width: 600px;
+    width: 90%px;
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
