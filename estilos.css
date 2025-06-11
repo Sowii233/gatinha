@@ -1,9 +1,4 @@
-body {
-    overflow-x: hidden;
-}
-
 .bg {
-
     background: linear-gradient(270deg, #973d5d, #fde2e4);
     background-size: 400% 400%;
     animation: animarFundo 10s ease infinite;
@@ -13,52 +8,58 @@ body {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
 }
 
+/* Título centralizado */
 .h1 {
     text-align: center;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px 6px #000000;
+    margin: 1rem 0;
+    width: 100%;
 }
 
-
+/* Container principal centralizado */
 .container {
     display: flex;
-    align-self: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-
+    min-height: 80vh;
+    padding: 0 1rem;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 420px;
 }
 
+/* Fundo borrado atrás da div */
 .div2 {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     height: 270px;
-    margin: auto;
     background-color: rgb(255, 0, 55);
     filter: blur(7px);
 }
 
+/* Caixa com frase e botão */
 .div {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     font-family: courier;
     font-weight: bold;
-    width: 380px;
-    height: 225px;
+    width: 100%;
+    max-width: 380px;
+    min-height: 225px;
     margin: auto;
-    border: 1px solid;
-    border-color: transparent;
+    border: 1px solid transparent;
     border-radius: 5px;
     background-color: rgb(255, 129, 129);
     align-items: center;
@@ -66,16 +67,17 @@ body {
     text-align: center;
     color: #ffffff;
     backdrop-filter: blur(10px);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
+/* Botão animado */
 .btn {
-    align-items: center;
-    justify-content: center;
     background-color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #000000;
-    border-color: transparent;
+    border: none;
     border-radius: 5px;
     height: 55px;
     width: 160px;
@@ -90,18 +92,17 @@ body {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
-
     70% {
         transform: scale(1.1);
         box-shadow: 0 0 0 10px rgba(255, 77, 109, 0);
     }
-
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(255, 77, 109, 0);
     }
 }
 
+/* Corações flutuantes */
 .hearts {
     position: fixed;
     width: 100%;
@@ -122,118 +123,41 @@ body {
     opacity: 0.6;
 }
 
-/* Varia a posição e velocidade */
-.heart:nth-child(1) {
-    left: 10%;
-    animation-duration: 8s;
-}
-
-.heart:nth-child(2) {
-    left: 20%;
-    animation-duration: 13s;
-}
-
-.heart:nth-child(3) {
-    left: 30%;
-    animation-duration: 5s;
-}
-
-.heart:nth-child(4) {
-    left: 40%;
-    animation-duration: 13s;
-}
-
-.heart:nth-child(5) {
-    left: 50%;
-    animation-duration: 10s;
-}
-
-.heart:nth-child(6) {
-    left: 60%;
-    animation-duration: 7s;
-}
-
-.heart:nth-child(7) {
-    left: 70%;
-    animation-duration: 9s;
-}
-
-.heart:nth-child(8) {
-    left: 80%;
-    animation-duration: 11s;
-}
-
-.heart:nth-child(9) {
-    left: 90%;
-    animation-duration: 8s;
-}
-
-.heart:nth-child(10) {
-    left: 0%;
-    animation-duration: 2s;
-}
-
-.heart:nth-child(11) {
-    left: 100%;
-    animation-duration: 12s;
-}
-
-.heart:nth-child(12) {
-    left: 65%;
-    animation-duration: 5s;
-}
-
-.heart:nth-child(13) {
-    left: 55%;
-    animation-duration: 7s;
-}
-
-.heart:nth-child(14) {
-    left: 45%;
-    animation-duration: 11s;
-}
-
-.heart:nth-child(15) {
-    left: 35%;
-    animation-duration: 4s;
-}
-
-.heart:nth-child(16) {
-    left: 25%;
-    animation-duration: 7s;
-}
-
-.heart:nth-child(16) {
-    left: 75%;
-    animation-duration: 5s;
-}
-
-.heart:nth-child(17) {
-    left: 85%;
-    animation-duration: 12s;
-}
-
-.heart:nth-child(18) {
-    left: 95%;
-    animation-duration: 9s;
-}
+/* Variações dos corações */
+.heart:nth-child(1) { left: 10%; animation-duration: 8s; }
+.heart:nth-child(2) { left: 20%; animation-duration: 13s; }
+.heart:nth-child(3) { left: 30%; animation-duration: 5s; }
+.heart:nth-child(4) { left: 40%; animation-duration: 13s; }
+.heart:nth-child(5) { left: 50%; animation-duration: 10s; }
+.heart:nth-child(6) { left: 60%; animation-duration: 7s; }
+.heart:nth-child(7) { left: 70%; animation-duration: 9s; }
+.heart:nth-child(8) { left: 80%; animation-duration: 11s; }
+.heart:nth-child(9) { left: 90%; animation-duration: 8s; }
+.heart:nth-child(10) { left: 0%; animation-duration: 2s; }
+.heart:nth-child(11) { left: 100%; animation-duration: 12s; }
+.heart:nth-child(12) { left: 65%; animation-duration: 5s; }
+.heart:nth-child(13) { left: 55%; animation-duration: 7s; }
+.heart:nth-child(14) { left: 45%; animation-duration: 11s; }
+.heart:nth-child(15) { left: 35%; animation-duration: 4s; }
+.heart:nth-child(16) { left: 75%; animation-duration: 5s; }
+.heart:nth-child(17) { left: 85%; animation-duration: 12s; }
+.heart:nth-child(18) { left: 95%; animation-duration: 9s; }
 
 @keyframes flutuar {
     0% {
         transform: translateY(100vh) scale(1);
         opacity: 0;
     }
-
     50% {
         opacity: 1;
     }
-
     100% {
         transform: translateY(-10vh) scale(1.2);
         opacity: 0;
     }
 }
 
+/* Frase sorteada */
 .frase {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
@@ -241,89 +165,36 @@ body {
     text-align: center;
 }
 
+/* Parágrafo de texto */
 .pp {
     color: white;
-    width: 600px;
-    font-size: 25px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-
-  /* Ajusta a animação de fundo para ficar mais estável e menos deslocada */
-  .bg {
-    background-size: 200% 200%;
-    animation-duration: 15s;
-  }
-
-  /* Ajusta a área das corações para não ultrapassar a tela */
-  .hearts {
-    overflow: visible;
-  }
-  .heart {
-    width: 20px;
-    height: 20px;
-    opacity: 0.4;
-  }
-
-  /* Container principal flexível, altura adaptável, centralizado */
-  .container {
-    flex-direction: column;
-    height: auto;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  /* Div de fundo com blur reduzido e tamanho proporcional */
-  .div2 {
-    width: 90vw;
-    max-width: 420px;
-    height: 200px;
-    filter: blur(4px);
-    margin: 0 auto;
-  }
-
-  /* Div do conteúdo com tamanho e posição responsivos */
-  .div {
-    position: relative;
-    width: 90vw;
-    max-width: 380px;
-    height: auto;
-    min-height: 180px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-size: 16px;
-  }
-
-  /* Botão com largura e altura ajustadas */
-  .btn {
-    width: 140px;
-    height: 45px;
-    font-size: 14px;
-  }
-
-  /* Frase exibida, para melhor leitura em telas pequenas */
-  .frase {
-    font-size: 18px;
-    padding: 0 10px;
-  }
-
-  /* Texto grande responsivo, largura ajustável e fonte menor */
-  .pp {
     width: 90vw;
     max-width: 600px;
     font-size: 18px;
-    margin: 1.5rem auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 1.5;
     padding: 0 1rem;
-    line-height: 1.4;
-    text-align: justify;
-  }
+}
 
-  /* Título centralizado com tamanho menor */
-  .h1 {
-    font-size: 24px;
-    padding: 0 1rem;
-  }
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        min-height: auto;
+        max-width: 90vw;
+    }
+
+    .div {
+        min-height: auto;
+        max-width: 100%;
+    }
+
+    .pp {
+        font-size: 16px;
+    }
+
+    .h1 {
+        font-size: 22px;
+    }
 }
