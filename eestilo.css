@@ -39,7 +39,6 @@
     justify-content: center;
     min-height: 90vh;
     gap: 1rem;
-    flex-direction: column;
 }
 
 .container2 {
@@ -51,7 +50,6 @@
     height: 700px;
     overflow: hidden;
     border-radius: 30px;
-    flex-direction: row;
 }
 
 .slider {
