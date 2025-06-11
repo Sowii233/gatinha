@@ -32,13 +32,14 @@
     <br>
     <h1 class="h1">Bem-Vinda ao sorteio de frases!</h1>
     <div class="container">
-
+      <div class="card-wrapper">
         <div class="div2"></div>
         <div class="div">
             <div id="frase" class="frase"></div>
             <br>
             <br>
             <button class="btn" onclick="sorteio()"> Sorteie uma frase!</button>
+      
             <script>
                 async function obterFrasesTxt() {
                     const res = await fetch('frases.txt');
@@ -54,6 +55,7 @@
             </script>
 
         </div>
+      </div>
     </div>
         <p class="pp">
             Eu sei que você se preocupa muito. Sei que pensa demais e às vezes esses pensamentos não são legais.
