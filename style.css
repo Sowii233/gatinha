@@ -1,9 +1,10 @@
 .bg {
-
-    background-position: 0px 0px;
+    background-image: url("acatha.png");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 1900px 1000px;
+    background-size: cover;
     background-color: #ffffff;
+    min-height: 100vh;
 }
 
 
