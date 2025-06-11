@@ -39,6 +39,7 @@
     justify-content: center;
     min-height: 90vh;
     gap: 1rem;
+    flex-direction: column;
 }
 
 .container2 {
