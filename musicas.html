@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="eestilos.css">
+    <title>Playlist</title>
+</head>
+
+<body class="bg">
+    <br>
+    <h1 class="h1"> Bem-vinda à sua playlist!</h1>
+    <div class="container">
+
+        <img src="imagem_2025-06-11_001106014-removebg-preview.png" class="img2">
+
+        <audio autoplay loop id="audio">
+            <source src="videoplayback-_2_.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="container2">
+            <button id="btnSom" class="btn2"><img src="sporify.jpg" class="img"></button>
+            <script>
+                const audio = document.getElementById('audio');
+                const btn = document.getElementById('btnSom');
+
+                btn.addEventListener('click', () => {
+                    if (audio.paused) {
+                        audio.play();
+                    } else {
+                        audio.pause();
+                    }
+                });
+            </script>
+            <p class="p">Para a melhor namorada do mundo 💋 </p>
+            <br>
+
+        </div>
+        <a href="https://open.spotify.com/playlist/7u6X5312NqqWbQplra3hGy?si=572c6affbbc14d50"><button class="btn">
+                Viagem rápida!</button> </a>
+    </div>
+</body>
+
+</html>
