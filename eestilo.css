@@ -122,10 +122,4 @@
         margin: 1.5rem auto;
         padding: 0 1rem;
     }
-
-    /* (Opcional) Ajusta os botões, caso queira */
-    #prev, #next {
-        width: 25px;
-        height: 25px;
-    }
 }
